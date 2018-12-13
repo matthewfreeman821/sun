@@ -2,7 +2,7 @@ body {
     margin: 0 0 0 0;
     background-color: #2C3E50;
     animation-name: skycycle;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-delay: 0;
@@ -21,7 +21,7 @@ body {
     height: 200px;
     border-radius: 50%;
     animation-name: suncycle;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -49,18 +49,22 @@ body {
 
 @keyframes suncycle {
     0% {
-        transform: translate(0px, 0px)
+        transform: translate(-200px, 200px);
+        background-color: orange;
     }
     25% {
-        transform: translate(355px, 0px)
+        transform: translate(355px, 0px);
+        background-color: yellow;
     }
     50% {
-        transform: translate(710px, 0px)
+        transform: translate(710px, -50px);
     }
     75% {
-        transform: translate(1065px, 0px)
+        transform: translate(1065px, 0px);
+        background-color: yellow;
     }
     100% {
-        transform: translate(1420px, 0px)
+        transform: translate(1420px, 200px);
+        background-color: orangered;
     }
 }
