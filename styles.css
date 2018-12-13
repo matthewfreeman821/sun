@@ -1,6 +1,11 @@
 body {
     margin: 0 0 0 0;
     background-color: #2C3E50;
+    animation-name: skycycle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0;
 }
 
 .grass {
@@ -15,4 +20,25 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+@keyframes skycycle {
+    0% {
+        background-color: #2C3E50;
+    }
+    10% {
+        background-color: coral;
+    }
+    30% {
+        background-color: skyblue;
+    }
+    70% {
+        background-color: skyblue;
+    }
+    90% {
+        background-color: coral;
+    }
+    100% {
+        background-color: #2C3E50;
+    }
 }
