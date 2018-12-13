@@ -20,6 +20,10 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    animation-name: suncycle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes skycycle {
@@ -40,5 +44,23 @@ body {
     }
     100% {
         background-color: #2C3E50;
+    }
+}
+
+@keyframes suncycle {
+    0% {
+        transform: translate(0px, 0px)
+    }
+    25% {
+        transform: translate(355px, 0px)
+    }
+    50% {
+        transform: translate(710px, 0px)
+    }
+    75% {
+        transform: translate(1065px, 0px)
+    }
+    100% {
+        transform: translate(1420px, 0px)
     }
 }
